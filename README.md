@@ -1,2 +1,2 @@
 # ASP.NET
-AIUB - Web development course for ASP .NET using c# 
+AIUB Course: Advanced Programming with .NET (ASP .NET using c#)
