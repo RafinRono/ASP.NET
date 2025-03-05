@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Testing</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+    <div> 
+        <table class="table table-bordered">
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    ID
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @ViewBag.Name
+                </td>
+                <td>
+                    @ViewBag.ID
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @ViewData["Name1"]
+                </td>
+                <td>
+                    @ViewData["ID1"]
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
