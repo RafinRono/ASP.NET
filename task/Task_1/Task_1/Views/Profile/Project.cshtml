@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_OwnLayout.cshtml";
+}
+
+<h2>Projects</h2>
+
+<ol>
+    @foreach (dynamic item in @Model)
+    {
+        <li>
+            <ul>
+                <li>@item.Title</li>
+                <li>@item.Course</li>
+                <li>@item.Description</li>
+            </ul>
+        </li>
+        <br />
+    }
+</ol>

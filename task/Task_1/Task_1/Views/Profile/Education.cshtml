@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Education";
+    Layout = "~/Views/Shared/_OwnLayout.cshtml";
+}
+
+<h2>Education</h2>
+<table border="1" cellspacing="0">
+    <tr align="center">
+        <td>Degree</td>
+        <td>Institute</td>
+        <td>Year</td>
+        <td>Result</td>
+    </tr>
+
+    @foreach (var item in @Model) 
+        { 
+            <tr align="center">
+                <td>@item.Degree</td>
+                <td>@item.Institute</td>
+                <td>@item.Year</td>
+                <td>@item.Result</td>
+            </tr>
+        }
+</table>

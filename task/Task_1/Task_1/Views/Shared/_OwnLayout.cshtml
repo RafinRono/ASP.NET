@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>
+                <a href="/Profile/Index">Home</a>
+                <a href="/Profile/Education">Education</a>
+                <a href="/Profile/Project">Projects</a>
+                <a href="/Profile/Ref">Ref</a>
+            </td>
+        </tr>
+    </table>
+
+    <div> 
+        @RenderBody()
+    </div>
+
+</body>
+</html>
