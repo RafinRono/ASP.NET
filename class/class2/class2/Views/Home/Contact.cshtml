@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <div class="bg-dark display-6 text-success text-center">
+        <p>@Model.Name</p>
+        <p>@Model.Id</p>
+        <p>@Model.Email</p>
+        <p>@Model.Gender</p>
+    </div>
+
+    <address>
+        Mirpur, Dhaka<br />
+        Testing<br />
+        <abbr title="Phone">P:</abbr>
+        01234567890
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+</main>
