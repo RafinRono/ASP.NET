@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Info";
+}
+
+<h2>Info</h2>
+@Html.ValidationSummary()
+@Model.Name <br />
+@Model.Id <br />
+@Model.DOB <br />
+@Model.Email <br />
+<br />
+
+<form method="post">
+    <input type="text" name="Name" placeholder="Name" value="@Model.Name" /> <br />
+    <p class="text-danger">@Html.ValidationMessage("Name")</p>
+    <input type="text" name="Id" placeholder="Id" value="@Model.Id" /> <br />
+    <p class="text-danger">@Html.ValidationMessage("Id")</p>
+    <input type="date" name="DOB" placeholder="Date of Birth" value="@Model.DOB" /> <br />
+    <p class="text-danger">@Html.ValidationMessage("DOB")</p>
+    <input type="text" name="Email" placeholder="Email" value="@Model.Email" /> <br />
+    <p class="text-danger">@Html.ValidationMessage("Email")</p>
+    <input type="submit" value="Submit" name="Submit" />
+</form>
+
+
