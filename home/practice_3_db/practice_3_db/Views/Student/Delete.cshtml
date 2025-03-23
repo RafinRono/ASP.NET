@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<form method="post">
+    <!-- <input type="hidden" name="Id" value="@Model.Id" /> -->
+    <input type="text" disabled name="Name" value="@Model.Name" class="form-control" placeholder="Name" />
+    <input type="text" disabled name="Cgpa" value="@Model.Cgpa" class="form-control" placeholder="Cgpa" />
+    <input type="date" disabled name="DOB" value="@Model.DOB.ToString("yyyy-MM-dd")" class="form-control" placeholder="DOB" />
+
+    <br />
+    <h3 class="text-danger"> Are you sure you want to Delete? </h3>
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a href="/Student/Index" class="btn btn-secondary">Cancel</a>
+</form>
