@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <div class="bg-dark text-center text-success">
+        <p>@Model.Name</p>
+        <p>@Model.Id</p>
+        <p>@Model.DOB.ToString("dd-MM-yyyy")</p>
+        <p>@Model.Email</p>
+        <p>@Model.Gender</p>
+        <p>@Model.Department</p>
+        <p>
+            @if (Model.Hobbies != null)
+            {
+                foreach (var h in Model.Hobbies)
+                {
+                    @h.ToString()
+                }
+            }
+        </p>
+
+    </div>
+
+    <address>
+        <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+</main>
