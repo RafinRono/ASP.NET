@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "EditCategory";
+}
+
+<h2>EditCategory</h2>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    Name: <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="Name" />
+    <input type="submit" value="Add" class="btn btn-primary" />
+</form>

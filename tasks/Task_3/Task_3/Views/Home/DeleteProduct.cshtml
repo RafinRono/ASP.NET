@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "DeleteProduct";
+}
+
+<h2>DeleteProduct</h2>
+
+<form method="post">
+    <!-- <input type="hidden" name="Id" value="@Model.Id" /> -->
+    Name: <input type="text" disabled name="Name" value="@Model.Name" class="form-control" placeholder="Name" />
+    Price: <input type="number" disabled name="Price" value="@Model.Price" class="form-control" placeholder="Name" />
+    Qty: <input type="number" disabled name="Qty" value="@Model.Qty" class="form-control" placeholder="Name" />
+    Cid: <input type="number" disabled name="Cid" value="@Model.Cid" class="form-control" placeholder="Name" />
+    <br />
+    <h3 class="text-danger"> Are you sure you want to Delete? </h3>
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a href="/Home/ProductIndex" class="btn btn-secondary">Cancel</a>
+</form>

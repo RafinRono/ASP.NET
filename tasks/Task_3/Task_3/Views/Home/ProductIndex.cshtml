@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "ProductIndex";
+}
+
+<h2>ProductIndex</h2>
+
+@if (TempData["Msg"] != null)
+{
+    <p class="alert alert-success">
+        @TempData["Msg"]
+    </p>
+}
+
+<a href="/Home/CreateProduct" class="btn btn-primary">Create</a>
+
+@if (Model.Count != 0)
+{
+    <table class="table table-bordered">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Qty</td>
+            <td>Cid</td>
+            <td></td>
+        </tr>
+        @foreach (var s in Model)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>@s.Price</td>
+                <td>@s.Qty</td>
+                <td>@s.Cid</td>
+                <td>
+                    <a href="/Home/EditProduct/@s.Id" class="btn btn-success">Edit</a>
+                    <a href="/Home/DeleteProduct/@s.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <h3>No data</h3>
+}
+
