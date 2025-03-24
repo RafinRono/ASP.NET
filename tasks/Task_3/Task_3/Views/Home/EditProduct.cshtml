@@ -26,7 +26,7 @@
     Name: <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="Name" />
     Price: <input type="number" name="Price" value="@Model.Price" class="form-control" placeholder="Price" />
     Qty: <input type="number" name="Qty" value="@Model.Qty" class="form-control" placeholder="Qty" />
-    Category (Cid):
+    Category:
     <select class="form-control" name="Cid">
         <option disabled selected>--Select Category--</option>
         @foreach (var c in categories)
@@ -35,5 +35,5 @@
         }
     </select>
 
-    <input type="submit" value="Add" class="btn btn-primary" />
+    <input type="submit" value="Edit" class="btn btn-success" />
 </form>
