@@ -1,0 +1,166 @@
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.AssemblyReference.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.CoreCompileInputs.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\StudentMgt.dll.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\StudentMgt.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\StudentMgt.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csc.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csc.exe.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csc.rsp
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csi.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csi.exe.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\csi.rsp
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.AppContext.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Console.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Net.Http.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\vbc.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\vbc.exe.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\vbc.rsp
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Antlr3.Runtime.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\EntityFramework.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Newtonsoft.Json.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Helpers.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Mvc.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Optimization.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Razor.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\WebGrease.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\EntityFramework.SqlServer.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Helpers.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Mvc.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Optimization.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.Razor.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Newtonsoft.Json.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Antlr3.Runtime.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.CopyComplete
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\obj\Debug\StudentMgt.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\A\StudentMgt\StudentMgt\obj\Debug\StudentMgt.pdb
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\StudentMgt.dll.config
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\StudentMgt.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\StudentMgt.pdb
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csc.exe
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csc.exe.config
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csc.rsp
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csi.exe
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csi.exe.config
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\csi.rsp
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Managed.Core.targets
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\Microsoft.Win32.Primitives.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.AppContext.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Collections.Immutable.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Console.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Diagnostics.StackTrace.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Globalization.Calendars.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.IO.Compression.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.IO.Compression.ZipFile.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.IO.FileSystem.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.IO.FileSystem.Primitives.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Net.Http.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Net.Sockets.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Reflection.Metadata.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Encoding.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.Primitives.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Text.Encoding.CodePages.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Threading.Tasks.Extensions.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.ValueTuple.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Xml.ReaderWriter.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XmlDocument.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XPath.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\System.Xml.XPath.XDocument.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\vbc.exe
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\vbc.exe.config
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\vbc.rsp
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\VBCSCompiler.exe
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\roslyn\VBCSCompiler.exe.config
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Antlr3.Runtime.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\EntityFramework.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\EntityFramework.SqlServer.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Microsoft.Web.Infrastructure.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Newtonsoft.Json.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Helpers.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Mvc.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Optimization.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Razor.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.Deployment.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.Razor.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\WebGrease.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\EntityFramework.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\EntityFramework.SqlServer.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Helpers.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Mvc.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Optimization.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.Razor.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.Deployment.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\System.Web.WebPages.Razor.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Newtonsoft.Json.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Antlr3.Runtime.pdb
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.AssemblyReference.cache
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.CoreCompileInputs.cache
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\obj\Debug\StudentMgt.csproj.CopyComplete
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\obj\Debug\StudentMgt.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\10-April\StudentMgt\StudentMgt\obj\Debug\StudentMgt.pdb
