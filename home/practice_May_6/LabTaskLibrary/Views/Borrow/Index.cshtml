@@ -1,0 +1,52 @@
+﻿@model IEnumerable<LabTaskLibrary.DTOs.BookDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (TempData["Msg"] != null && TempData["class"]!=null)
+    {
+        <p class="text-@TempData["class"]">
+               @TempData["Msg"]
+        </p>
+    }
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableQty)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReleaseDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvailableQty)
+        </td>
+        <td>
+            @Html.ActionLink("Borrow", "Borrow", new { id=item.Id})
+        </td>
+    </tr>
+}
+
+</table>
