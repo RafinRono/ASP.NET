@@ -10,7 +10,7 @@ namespace PMS.Controllers
 {
     public class UserController : Controller
     {
-        private PMS_Sp25_AEntities1 db = new PMS_Sp25_AEntities1();
+        private PMS_Sp25_AEntities db = new PMS_Sp25_AEntities();
         // GET: User
         [HttpGet]
         public ActionResult Registration()

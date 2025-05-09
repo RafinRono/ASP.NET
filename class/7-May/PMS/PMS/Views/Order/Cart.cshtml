@@ -1,0 +1,67 @@
+﻿@model IEnumerable<PMS.DTOs.ProductDTO>
+
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h2>Cart</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            Unit Total
+        </th>
+        <th></th>
+    </tr>
+    @{ 
+        decimal gtotal = 0;
+    }
+@foreach (var item in Model)
+{
+
+    decimal unitTotal = item.Price * item.Qty;
+    gtotal += unitTotal;
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <a href="/order/cartdec/@item.Id">
+                <span class="glyphicon glyphicon-minus"></span>
+            </a>
+            
+            <input  type="number" style="width:50px"  disabled value="@Html.DisplayFor(modelItem => item.Qty)" />
+            <a href="/order/cartinc/@item.Id">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </td>
+        <td>
+            @unitTotal
+        </td>
+    </tr>
+}
+    <tr>
+        <th class="text-right" colspan="3">Grand Total</th>
+        <th>@gtotal</th>
+    </tr>
+</table>
+<form method="post" action="/order/placeOrder">
+    <input type="hidden" name="Total" value="@gtotal"/>
+    <input type="submit" value="Place Order" class="btn btn-danger"/>
+</form>
