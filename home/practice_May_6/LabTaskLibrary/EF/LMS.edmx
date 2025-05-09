@@ -42,6 +42,7 @@
           <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Qty" Type="int" Nullable="false" />
           <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="SId" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Employees">
           <Key>
@@ -122,6 +123,7 @@
           <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Qty" Type="Int32" Nullable="false" />
           <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="SId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -201,6 +203,7 @@
           <EntitySetMapping Name="Borrows">
             <EntityTypeMapping TypeName="Library_MGTModel.Borrow">
               <MappingFragment StoreEntitySet="Borrows">
+                <ScalarProperty Name="SId" ColumnName="SId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Time" ColumnName="Time" />
                 <ScalarProperty Name="Status" ColumnName="Status" />

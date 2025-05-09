@@ -35,6 +35,7 @@
     <EntitySetMapping Name="Borrows">
       <EntityTypeMapping TypeName="Library_MGTModel.Borrow">
         <MappingFragment StoreEntitySet="Borrows">
+          <ScalarProperty Name="SId" ColumnName="SId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Time" ColumnName="Time" />
           <ScalarProperty Name="Status" ColumnName="Status" />

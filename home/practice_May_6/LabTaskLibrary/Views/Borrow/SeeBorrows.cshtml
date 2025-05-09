@@ -1,0 +1,63 @@
+﻿@model IEnumerable<LabTaskLibrary.EF.Borrow>
+
+@{
+    ViewBag.Title = "SeeBorrows";
+}
+
+<h2>SeeBorrows</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SId)
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SId)
+        </td>
+        <td>
+            @{
+                if (item.Status.Equals("Borrowing"))
+                {
+                    //Html.ActionLink("Return", "Return", new { id = item.Id })
+                    <a href="Borrow/Return/@item.Id">Return</a>
+                }
+                else
+                {<p class="text-danger">Retuned/Expired</p>}
+            }
+        </td>
+    </tr>
+}
+
+</table>

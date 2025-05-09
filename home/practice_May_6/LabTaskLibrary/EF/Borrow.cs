@@ -19,5 +19,6 @@ namespace LabTaskLibrary.EF
         public string Status { get; set; }
         public int Qty { get; set; }
         public int CreatedBy { get; set; }
+        public int SId { get; set; }
     }
 }

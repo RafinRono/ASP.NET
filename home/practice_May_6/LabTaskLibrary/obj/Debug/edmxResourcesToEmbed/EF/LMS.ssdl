@@ -37,6 +37,7 @@
     <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Qty" Type="int" Nullable="false" />
     <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="SId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>

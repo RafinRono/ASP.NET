@@ -14,23 +14,43 @@ namespace LabTaskLibrary.Controllers
         // GET: Order
         public ActionResult Index()
         {
+            var borrows = db.Borrows.ToList();
+            foreach (var borrow in borrows)
+            {
+                var ExpireDate = borrow.Time.AddDays(7);
+                if (System.DateTime.Now > ExpireDate)
+                    borrow.Status = "Expired";
+                db.SaveChanges();
+            }
+
             var data = db.Books.ToList();
             return View(BookController.Convert(data));
         }
         public ActionResult Borrow(int id)
         {
+            var user = (Login)Session["User"];
             var borrow = new Borrow()
             {
-                Id = id,
                 Time = DateTime.Now,
                 Qty = 1,
-                CreatedBy = 1,
-                Status = "Borrowing"
+                CreatedBy = user.Id,
+                Status = "Borrowing",
+                SId = (int)Session["SId"]
             };
 
             db.Borrows.Add(borrow);
+            db.SaveChanges();
 
-            if(db.SaveChanges() > 0)
+            var borrowD = new BorrowDetail()
+            {
+                BrwId = borrow.Id,
+                BkId = id,
+                Qty = 1
+            };
+
+            db.BorrowDetails.Add(borrowD);
+
+            if (db.SaveChanges() > 0)
             {
                 TempData["Msg"] = "Book Borrowed";
                 TempData["class"] = "success";
@@ -63,6 +83,20 @@ namespace LabTaskLibrary.Controllers
         {
             Session["SId"] = int.Parse(Sid);
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult SeeBorrows()
+        {
+            return View(db.Borrows.ToList());
+        }
+
+        [HttpGet]
+        public ActionResult Return(int id) {
+            var Borrow = db.Borrows.Find(id);
+            Borrow.Status = "Returned";
+            db.SaveChanges();
+            return RedirectToAction("SeeBorrows");
         }
     }
 }

@@ -47,20 +47,23 @@ namespace LabTaskLibrary.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string UName, string Pass)
+        public ActionResult Login(string Username, string Password)
         {
             var user = (from u in db.Logins
-                        where u.Username.Equals(UName) &&
-                        u.Password.Equals(Pass)
+                        where u.Username.Equals(Username) &&
+                        u.Password.Equals(Password)
                         select u).SingleOrDefault();
             if (user != null)
             {
                 Session["User"] = user;
                 if (user.Type.Equals("Student"))
                 {
-                    return RedirectToAction("Index", "Order");
+                    return RedirectToAction("Index", "Borrow");
                 }
+                else
+                    return RedirectToAction("Start", "Borrow");
             }
+
             TempData["Msg"] = "Username or password invalid";
             TempData["Class"] = "danger";
             return View();
