@@ -74,23 +74,24 @@
     <Compile Include="Repos\StudentRepo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="EF\StudentModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>StudentModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="EF\StudentModel.edmx.diagram">
       <DependentUpon>StudentModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="EF\StudentModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>StudentModel.Context.cs</LastGenOutput>
       <DependentUpon>StudentModel.edmx</DependentUpon>
+      <LastGenOutput>StudentModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="EF\StudentModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -98,9 +99,5 @@
       <LastGenOutput>StudentModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

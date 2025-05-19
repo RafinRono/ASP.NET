@@ -9,10 +9,10 @@ namespace DAL.Repos
 {
     public class Repo
     {
-        protected Class_TestEntities db;
+        protected TestingAPIEntities db;
         public Repo()
         {
-            db = new Class_TestEntities();
+            db = new TestingAPIEntities();
         }
     }
 }

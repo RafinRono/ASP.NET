@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\student\Downloads\oop2\DAL\EF\StudentModel.edmx'. 
+﻿// T4 code generation is enabled for model 'J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\class\19-May\oop2\DAL\EF\StudentModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

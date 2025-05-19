@@ -13,10 +13,10 @@ namespace DAL.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Class_TestEntities : DbContext
+    public partial class TestingAPIEntities : DbContext
     {
-        public Class_TestEntities()
-            : base("name=Class_TestEntities")
+        public TestingAPIEntities()
+            : base("name=TestingAPIEntities")
         {
         }
     
