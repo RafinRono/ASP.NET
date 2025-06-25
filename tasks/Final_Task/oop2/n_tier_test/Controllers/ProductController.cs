@@ -16,56 +16,89 @@ namespace n_tier_test.Controllers
         [Route("api/product/{id}")]
         public HttpResponseMessage Get(int id)
         {
-            var data = ProductService.Get(id);
-            return Request.CreateResponse(HttpStatusCode.OK, data);
+            try
+            {
+                var data = ProductService.Get(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
         }
 
-        //[HttpGet]
-        //[Route("api/product/all")]
-        //public HttpResponseMessage Get()
-        //{
-        //    var data = ProductService.Get();
-        //    return Request.CreateResponse(HttpStatusCode.OK, data);
-        //}
+        [HttpGet]
+        [Route("api/product/all")]
+        public HttpResponseMessage Get()
+        {
+            try
+            {
+                var data = ProductService.Get();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
 
         [HttpPost]
         [Route("api/product/create")]
         public HttpResponseMessage Create(ProductDTO obj)
         {
-            if (obj == null)
+            try
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error");
+                if (obj == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error");
+                }
+                else
+                {
+                    ProductService.Create(obj);
+                    return Request.CreateResponse(HttpStatusCode.Created, "Added");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ProductService.Create(obj);
-                return Request.CreateResponse(HttpStatusCode.Created, "Added");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
-            
         }
 
         [HttpPut]
         [Route("api/product/update")]
         public HttpResponseMessage Update(ProductDTO obj)
         {
-            if (obj == null)
+            try
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error");
+                if (obj == null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error");
+                }
+                else
+                {
+                    ProductService.Update(obj);
+                    return Request.CreateResponse(HttpStatusCode.Continue, "Updated");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ProductService.Update(obj);
-                return Request.CreateResponse(HttpStatusCode.Continue, "Updated");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
-
         }
 
         [HttpDelete]
         [Route("api/product/delete/{id}")]
         public HttpResponseMessage Delete(int id)
         {
-            ProductService.Delete(id);
-            return Request.CreateResponse(HttpStatusCode.OK, "Deleted");
+            try
+            {
+                ProductService.Delete(id);
+                return Request.CreateResponse(HttpStatusCode.OK, "Deleted");
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
         }
 
     }

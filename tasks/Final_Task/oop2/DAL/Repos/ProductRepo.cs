@@ -1,30 +1,42 @@
 ﻿using DAL.EF;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    public class ProductRepo: Repo
+    public class ProductRepo: Repo, IRepo<Product, int, Product>
     {
-        public void Create(Product obj)
+        public Product Create(Product obj)
         {
             db.Products.Add(obj);
-            db.SaveChanges();
+            if(db.SaveChanges() > 0) return obj;
+            return null;
         }
-        public void Update(Product obj)
+        public Product Update(Product obj)
         {
-            var test = db.Products.Find(obj.Id);
-            test.Name = obj.Name;
-            test.Price = obj.Price;
-            test.Qty = obj.Qty;
-            db.SaveChanges();
+            try
+            {
+                var test = Get(obj.Id);
+                //test.Name = obj.Name;
+                //test.Price = obj.Price;
+                //test.Qty = obj.Qty;
+                db.Entry(test).CurrentValues.SetValues(obj);
+                if(db.SaveChanges() > 0) return obj;
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
-        public void Delete(int id)
+        public bool Delete(int id)
         {
-            var data = db.Products.Find(id);
+            var data = Get(id);
             //if (data != null)
             //{
             //    db.Products.Remove(data);
@@ -40,7 +52,8 @@ namespace DAL.Repos
 
             //}
             db.Products.Remove(data);
-            db.SaveChanges();
+            return db.SaveChanges() > 0;
+
         }
         public List<Product> Get()
         {
@@ -49,6 +62,11 @@ namespace DAL.Repos
         public Product Get(int id)
         {
             return db.Products.Find(id);
+        }
+
+        public dynamic Confirm(List<Product> cart)
+        {
+            return cart.ToList();
         }
     }
 }

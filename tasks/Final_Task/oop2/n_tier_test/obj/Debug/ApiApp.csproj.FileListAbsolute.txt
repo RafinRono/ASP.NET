@@ -226,3 +226,5 @@ J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\obj\Debug\ApiApp.csproj.CopyComplete
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\obj\Debug\n_tier_test.dll
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\obj\Debug\n_tier_test.pdb
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\bin\AutoMapper.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\n_tier_test\bin\AutoMapper.xml

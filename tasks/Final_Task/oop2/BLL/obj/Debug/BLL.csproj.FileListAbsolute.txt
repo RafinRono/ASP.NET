@@ -34,3 +34,5 @@ J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\obj\Debu
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\obj\Debug\BLL.csproj.CopyComplete
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\obj\Debug\BLL.dll
 J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\obj\Debug\BLL.pdb
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\bin\Debug\AutoMapper.dll
+J:\Coding\Codes\C#\projects\AIUB\.NET\ASP.NET\tasks\Final_Task\oop2\BLL\bin\Debug\AutoMapper.xml
