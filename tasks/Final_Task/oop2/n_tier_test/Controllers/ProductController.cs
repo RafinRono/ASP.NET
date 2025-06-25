@@ -42,6 +42,21 @@ namespace n_tier_test.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/product/{id}/orders")]
+        public HttpResponseMessage GetwithOrder(int id)
+        {
+            try
+            {
+                var data = ProductService.GetWithOrders(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
         [HttpPost]
         [Route("api/product/create")]
         public HttpResponseMessage Create(ProductDTO obj)

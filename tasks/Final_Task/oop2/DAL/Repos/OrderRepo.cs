@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class OrderRepo: Repo, IRepo<Order, int, Order>
+    public class OrderRepo: Repo, IRepo<Order, int, Order>
     {
         public Order Create(Order obj)
         {
@@ -43,16 +43,38 @@ namespace DAL.Repos
         {
             return db.Orders.ToList();
         }
+
+        public List<OrderDetail> GetDetails()
+        {
+            return db.OrderDetails.ToList();
+        }
+
         public Order Get(int id)
         {
             return db.Orders.Find(id);
+        }
+
+        public Order Approve(int id)
+        {
+            var data = Get(id);
+            data.Status = "Approved";
+            db.SaveChanges();
+            return data;
+        }
+
+        public Order Reject(int id)
+        {
+            var data = Get(id);
+            data.Status = "Rejected";
+            db.SaveChanges();
+            return data;
         }
 
         public dynamic Confirm(List<Product> cart)
         {
             var order = new Order()
             {
-                Status = "Confirmed",
+                Status = "Pending",
                 Total = cart.Sum(p => p.Qty * p.Price),
                 UserID = 3
             };
@@ -67,10 +89,27 @@ namespace DAL.Repos
                     Qty = p.Qty,
                     Price = p.Price,
                     OrderID = order.Id
-
                 };
                 db.OrderDetails.Add(od);
+
+                var product = db.Products.FirstOrDefault(x => x.Id == p.Id);
+                if (product != null)
+                {
+                    if (product.Qty >= p.Qty)
+                    {
+                        product.Qty -= p.Qty;
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException("Error");
+                    }
+                }
+                else
+                {
+                    throw new InvalidOperationException("Error");
+                }
             }
+
             return db.SaveChanges() > 0;
         }
     }

@@ -107,5 +107,65 @@ namespace n_tier_test.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
+
+        [HttpGet]
+        [Route("api/order/alldetails")]
+        public HttpResponseMessage GetDetails()
+        {
+            try
+            {
+                var data = OrderService.GetDetails();
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        [Route("api/order/{id}/ordersdetails")]
+        public HttpResponseMessage GetwithOrder(int id)
+        {
+            try
+            {
+                var data = OrderService.GetOrders(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("api/order/approve/{id}")]
+        public HttpResponseMessage Approve(int id)
+        {
+            try
+            {
+                var test = OrderService.Approve(id);
+                return Request.CreateResponse(HttpStatusCode.OK, test);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("api/order/reject/{id}")]
+        public HttpResponseMessage Reject(int id)
+        {
+            try
+            {
+                var test = OrderService.Reject(id);
+                return Request.CreateResponse(HttpStatusCode.OK, test);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
     }
 }
