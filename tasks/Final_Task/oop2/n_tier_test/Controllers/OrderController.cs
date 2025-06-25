@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Web.Http;
 
 namespace n_tier_test.Controllers
@@ -167,5 +169,32 @@ namespace n_tier_test.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
+
+        [HttpGet]
+        [Route("api/order/export")]
+        public HttpResponseMessage ExportOrders()
+        {
+            try
+            {
+                var csvData = OrderService.ExportOrdersCsv();
+
+                var result = new HttpResponseMessage(HttpStatusCode.OK)
+                {
+                    Content = new StringContent(csvData, Encoding.UTF8, "text/csv")
+                };
+
+                result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
+                {
+                    FileName = "orders_export.csv"
+                };
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
     }
 }

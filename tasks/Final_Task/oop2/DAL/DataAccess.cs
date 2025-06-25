@@ -20,5 +20,10 @@ namespace DAL
         {
             return new OrderRepo();
         }
+
+        public static IRepo<User, int, User> UserData()
+        {
+            return new UserRepo();
+        }
     }
 }

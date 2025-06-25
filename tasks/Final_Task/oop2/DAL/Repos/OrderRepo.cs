@@ -56,18 +56,22 @@ namespace DAL.Repos
 
         public Order Approve(int id)
         {
-            var data = Get(id);
-            data.Status = "Approved";
+            var order = db.Orders.Find(id);
+            if (order == null) return null;
+
+            order.Status = "Accepted";
             db.SaveChanges();
-            return data;
+            return order;
         }
 
         public Order Reject(int id)
         {
-            var data = Get(id);
-            data.Status = "Rejected";
+            var order = db.Orders.Find(id);
+            if (order == null) return null;
+
+            order.Status = "Rejected";
             db.SaveChanges();
-            return data;
+            return order;
         }
 
         public dynamic Confirm(List<Product> cart)
@@ -112,5 +116,8 @@ namespace DAL.Repos
 
             return db.SaveChanges() > 0;
         }
+
+
+
     }
 }

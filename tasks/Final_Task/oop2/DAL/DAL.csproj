@@ -83,6 +83,7 @@
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\ProductRepo.cs" />
+    <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

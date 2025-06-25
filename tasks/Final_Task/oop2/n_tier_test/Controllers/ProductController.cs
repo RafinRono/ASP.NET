@@ -2,9 +2,13 @@
 using BLL.Services;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace n_tier_test.Controllers
@@ -109,6 +113,39 @@ namespace n_tier_test.Controllers
             {
                 ProductService.Delete(id);
                 return Request.CreateResponse(HttpStatusCode.OK, "Deleted");
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        [Route("api/product/import")]
+        public async Task<HttpResponseMessage> ImportCsv()
+        {
+            try
+            {
+                if (!Request.Content.IsMimeMultipartContent())
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "Invalid format." });
+
+                var provider = new MultipartMemoryStreamProvider();
+                await Request.Content.ReadAsMultipartAsync(provider);
+
+                var file = provider.Contents.FirstOrDefault();
+                if (file == null)
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, new { Message = "No file uploaded." });
+
+                var fileBytes = await file.ReadAsByteArrayAsync();
+                using (var stream = new MemoryStream(fileBytes))
+                {
+                    var result = ProductService.ImportCsv(stream);
+
+                    if (result)
+                        return Request.CreateResponse(HttpStatusCode.OK, new { Message = "Products imported successfully." });
+                    else
+                        return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = "Import failed." });
+                }
             }
             catch (Exception ex)
             {

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 using AutoMapper;
+using System.Xml.Linq;
 
 namespace BLL.Services
 {
@@ -26,6 +27,8 @@ namespace BLL.Services
                 cfg.CreateMap<Order, OrderDTO>();
                 cfg.CreateMap<OrderDetail, OrderDetailDTO>();
                 cfg.CreateMap<OrderDetailDTO, OrderDetail>();
+                cfg.CreateMap<UserDTO, User>();
+                cfg.CreateMap<User, UserDTO>();
             });
             return new Mapper(config);
         }
@@ -107,15 +110,41 @@ namespace BLL.Services
         public static OrderDTO Approve(int id)
         {
             var data = repo.Approve(id);
+            var mapper = GetMapper();
+            var dto = mapper.Map<OrderDTO>(data);
 
-            return GetMapper().Map<OrderDTO>(data);
+
+
+            var userEntity = DataAccess.UserData().Get(dto.UserID);
+            var user = mapper.Map<UserDTO>(userEntity);
+
+            if (user != null && !string.IsNullOrEmpty(user.Email))
+            {
+                string subject = $"Order #{dto.Id} Approved";
+                string body = $"Hi {user.Name},\n\nOrder #{dto.Id} has been approved.\nTotal: {dto.Total:C}\n\nThank you.";
+                EmailService.SendEmail(user.Email, subject, body);
+            }
+
+            return dto;
         }
 
         public static OrderDTO Reject(int id)
         {
             var data = repo.Reject(id);
+            var mapper = GetMapper();
+            var dto = mapper.Map<OrderDTO>(data);
 
-            return GetMapper().Map<OrderDTO>(data);
+            var userEntity = DataAccess.UserData().Get(dto.UserID);
+            var user = mapper.Map<UserDTO>(userEntity);
+
+            if (user != null && !string.IsNullOrEmpty(user.Email))
+            {
+                string subject = $"Order #{dto.Id} Rejected";
+                string body = $"Hi {user.Name},\n\nWe're sorry to inform you that your order #{dto.Id} has been rejected.\nTotal: {dto.Total:C}.";
+                EmailService.SendEmail(user.Email, subject, body);
+            }
+
+            return dto;
         }
 
         public static OrderShowDetailsDTO GetOrders(int id)
@@ -131,7 +160,26 @@ namespace BLL.Services
             return mapped;
 
             //return GetMapper().Map<ProductOrderDTO>(data);
-
         }
+
+        public static string ExportOrdersCsv()
+        {
+            var orders = repo.Get();
+            var mapper = GetMapper();
+
+            var orderDTOs = orders.Select(o => mapper.Map<OrderDTO>(o)).ToList();
+
+            var sb = new StringBuilder();
+
+            sb.AppendLine("OrderId,Status,Total,UserID");
+
+            foreach (var order in orderDTOs)
+            {
+                sb.AppendLine($"{order.Id},{order.Status},{order.Total},{order.UserID}");
+            }
+
+            return sb.ToString();
+        }
+
     }
 }

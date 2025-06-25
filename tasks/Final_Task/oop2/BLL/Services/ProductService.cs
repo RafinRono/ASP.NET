@@ -5,6 +5,7 @@ using DAL.EF;
 using DAL.Repos;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,7 @@ namespace BLL.Services
             });
             return new Mapper(config);
         }
+        public static ProductRepo repo = new ProductRepo();
 
         public static dynamic Create(ProductDTO st)
         {
@@ -72,6 +74,51 @@ namespace BLL.Services
 
             //return GetMapper().Map<ProductOrderDTO>(data);
 
+        }
+
+        public static bool ImportCsv(Stream csvStream)
+        {
+            var products = new List<ProductDTO>();
+
+            using (var reader = new StreamReader(csvStream))
+            {
+                bool isFirstRow = true;
+
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+                    if (isFirstRow) { isFirstRow = false; continue; }
+
+                    var parts = line.Split(',');
+
+                    if (parts.Length < 3)
+                        continue;
+
+                    try
+                    {
+                        var dto = new ProductDTO
+                        {
+                            Name = parts[0].Trim(),
+                            Price = double.Parse(parts[1]),
+                            Qty = int.Parse(parts[2])
+                        };
+
+                        if (dto.Price <= 0 || dto.Qty < 0)
+                            continue;
+
+                        products.Add(dto);
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+                }
+            }
+
+            var mapper = GetMapper(); 
+            var entities = products.Select(p => mapper.Map<Product>(p)).ToList();
+
+            return repo.BulkInsert(entities);
         }
 
         //public static ProductDTO Convert(Product data)

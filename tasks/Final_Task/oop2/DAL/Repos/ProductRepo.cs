@@ -68,5 +68,11 @@ namespace DAL.Repos
         {
             return cart.ToList();
         }
+
+        public bool BulkInsert(List<Product> products)
+        {
+            db.Products.AddRange(products);
+            return db.SaveChanges() > 0;
+        }
     }
 }
